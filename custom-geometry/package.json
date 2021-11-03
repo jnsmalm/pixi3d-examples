@@ -1,7 +1,7 @@
 {
-  "name": "pixi3d-custom-material",
+  "name": "pixi3d-custom-geometry",
   "version": "1.0.0",
-  "description": "Custom material",
+  "description": "Custom geometry",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -10,7 +10,7 @@
   "dependencies": {
     "parcel-bundler": "^1.6.1",
     "pixi.js": "6.1.3",
-    "pixi3d": "0.9.9"
+    "pixi3d": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.2.0"

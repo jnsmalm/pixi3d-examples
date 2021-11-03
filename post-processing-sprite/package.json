@@ -1,7 +1,7 @@
 {
-  "name": "pixi3d-standard-material",
+  "name": "pixi3d-post-processing-sprite",
   "version": "1.0.0",
-  "description": "Standard material",
+  "description": "Post processing sprite",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
@@ -11,7 +11,7 @@
     "parcel-bundler": "^1.6.1",
     "pixi-filters": "^4.1.5",
     "pixi.js": "6.1.3",
-    "pixi3d": "0.9.9"
+    "pixi3d": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.2.0"
