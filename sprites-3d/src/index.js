@@ -36,7 +36,7 @@ class Bunny extends Sprite3D {
     this.speedZ = -0.01 + Math.random() * 0.02;
 
     // The billboard type is set so the sprite always face the camera.
-    this.billboardType = SpriteBillboardType.Spherical;
+    this.billboardType = SpriteBillboardType.spherical;
   }
 
   distanceFromCamera() {
