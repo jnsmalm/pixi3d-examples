@@ -71,7 +71,7 @@ class CustomMaterial extends Material {
       shader.uniforms.u_Time = 0;
     }
     shader.uniforms.u_Time += app.ticker.elapsedMS / 1000;
-    shader.uniforms.u_ViewProjection = Camera.main.viewProjection;
+    shader.uniforms.u_ViewProjection = Camera.main.viewProjection.array;
     shader.uniforms.u_Model = mesh.worldTransform.array;
   }
 

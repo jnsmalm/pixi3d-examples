@@ -41,7 +41,7 @@ app.loader.load((_, resources) => {
     // To be able to get interaction events for a mesh, interactive needs to be set and a PickingHitArea needs to be
     model.interactive = true;
     model.buttonMode = true;
-    model.hitArea = new PickingHitArea(app.renderer, model);
+    model.hitArea = new PickingHitArea(model);
     model.on("pointerover", () => {
       model.scale.set(0.65);
     });

@@ -5,7 +5,7 @@ import {
   LightingEnvironment,
   ImageBasedLighting,
   CameraOrbitControl,
-  PostProcessingSprite
+  CompositeSprite
 } from "pixi3d";
 
 import "./styles.css";
@@ -40,7 +40,7 @@ app.loader.load((_, resources) => {
 
   // Create the post processing sprite and set object to render.
   let sprite = app.stage.addChild(
-    new PostProcessingSprite(app.renderer, {
+    new CompositeSprite(app.renderer, {
       objectToRender: model
     })
   );

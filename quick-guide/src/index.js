@@ -41,25 +41,23 @@ app.loader.load((_, resources) => {
   teapot.rotationQuaternion.setEulerAngles(0, 15, 0);
 
   // Adds a directional light to the main lighting environment.
-  let dirLight = Object.assign(new Light(), {
-    type: "directional",
-    intensity: 0.5,
-    x: -4,
-    y: 7,
-    z: -4
-  });
+  let dirLight = new Light()
+  dirLight.type = "directional"
+  dirLight.intensity = 0.5
+  dirLight.x = -4
+  dirLight.y = 7
+  dirLight.z = -4
   dirLight.rotationQuaternion.setEulerAngles(45, 45, 0);
   LightingEnvironment.main.lights.push(dirLight);
 
   // Adds a point light to the main lighting environment.
-  let pointLight = Object.assign(new Light(), {
-    type: "point",
-    x: 1,
-    y: 0,
-    z: 3,
-    range: 5,
-    intensity: 10
-  });
+  let pointLight = new Light()
+  pointLight.type = "point"
+  pointLight.x = 1
+  pointLight.y = 0
+  pointLight.z = 3
+  pointLight.range = 5
+  pointLight.intensity = 10
   LightingEnvironment.main.lights.push(pointLight);
 
   // Gives the model some slight color by setting the material base color of

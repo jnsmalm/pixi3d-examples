@@ -63,31 +63,28 @@ app.loader.load((_, resources) => {
 
 // A light that is located infinitely far away, and emits light in one
 // direction only.
-let dirLight = Object.assign(new Light(), {
-  type: LightType.directional,
-  intensity: 1,
-  color: new Color(1, 1, 1)
-});
+let dirLight = new Light()
+dirLight.type = LightType.directional
+dirLight.intensity = 1
+dirLight.color = new Color(1, 1, 1)
 dirLight.rotationQuaternion.setEulerAngles(45, -75, 0);
 LightingEnvironment.main.lights.push(dirLight);
 
 // A light that is located at a point and emits light in all directions equally.
-let pointLight = Object.assign(new Light(), {
-  type: LightType.point,
-  range: 10,
-  color: new Color(0.5, 0.5, 1),
-  intensity: 25
-});
+let pointLight = new Light()
+pointLight.type = LightType.point
+pointLight.range = 10
+pointLight.color = new Color(0.5, 0.5, 1)
+pointLight.intensity = 25
 pointLight.position.set(0, 2, -3);
 LightingEnvironment.main.lights.push(pointLight);
 
 // A light that is located at a point and emits light in a cone shape.
-let spotLight = Object.assign(new Light(), {
-  type: LightType.spot,
-  range: 30,
-  color: new Color(1, 0.7, 0.7),
-  intensity: 30
-});
+let spotLight = new Light()
+spotLight.type = LightType.spot
+spotLight.range = 30
+spotLight.color = new Color(1, 0.7, 0.7)
+spotLight.intensity = 30
 spotLight.position.set(-3, 2, -3);
 LightingEnvironment.main.lights.push(spotLight);
 

@@ -52,8 +52,8 @@ class CustomShader extends MeshShader {
 class CustomMaterial extends Material {
   updateUniforms(mesh, shader) {
     // Updates the shader uniforms before rendering with this material.
-    shader.uniforms.u_Model = mesh.worldTransform.toArray();
-    shader.uniforms.u_ViewProjection = Camera.main.viewProjection;
+    shader.uniforms.u_Model = mesh.worldTransform.array;
+    shader.uniforms.u_ViewProjection = Camera.main.viewProjection.array;
   }
 
   createShader() {

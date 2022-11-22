@@ -21,10 +21,8 @@ let mesh = app.stage.addChild(Mesh3D.createCube());
 
 // Create a light source and add it to the main lighting environment. Without
 // doing this, the rendered mesh would be completely black.
-let light = Object.assign(new Light(), {
-  x: -1,
-  z: +3
-});
+let light = new Light()
+light.position.set(-1, 0, 3)
 LightingEnvironment.main.lights.push(light);
 
 let rotation = 0;
